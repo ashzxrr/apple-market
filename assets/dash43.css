@@ -1,0 +1,152 @@
+
+body{
+   
+
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #0074D9, #FFFFFF);
+ 
+
+}
+nav {
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+nav li {
+    float: left;
+    margin-right: 20px;
+}
+nav li:last-child {
+    margin-right: 0;
+}
+nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 8px 16px;
+    display: block;
+}
+nav a:hover {
+    background-color: #ddd;
+}
+table {
+    background-color: hsl(199, 69%, 90%);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+table th {
+    padding: 8px;
+    text-align: center;
+}
+
+table td {
+    padding: 8px;
+    text-align: left;
+}
+.tab-container {
+    display: flex; /* Menggunakan flexbox */
+    justify-content: center; /* Mengatur posisi item di tengah secara horizontal */
+    align-items: center; /* Mengatur posisi item di tengah secara vertikal */
+    height: 30vh; /* Mengatur tinggi sesuai kebutuhan */
+  }
+
+ 
+.container {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.logout-btn {
+    background-color: #ff0000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.logout-btn:hover {
+    background-color: #cc0000;
+}
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+    width: 100px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.button-reset {
+    background-color: #ff0000;
+    /* Warna merah */
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+.message {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+}
+
+.message.success {
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+}
+
+.message.error {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+}
+
+.message.info {
+    color: #31708f;
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+}
+
+.message.warning {
+    color: #8a6d3b;
+    background-color: #fcf8e3;
+    border-color: #faebcc;
+}
